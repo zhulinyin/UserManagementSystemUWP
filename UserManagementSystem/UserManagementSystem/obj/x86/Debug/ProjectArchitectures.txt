@@ -1,0 +1,1 @@
+C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\UserManagementSystem.csproj;x86
