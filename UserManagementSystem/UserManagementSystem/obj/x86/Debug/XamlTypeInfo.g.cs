@@ -132,15 +132,31 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
-            _typeNameTable[0] = "UserManagementSystem.MainPage";
+            _typeNameTable = new string[11];
+            _typeNameTable[0] = "UserManagementSystem.AttendancePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "UserManagementSystem.ContractPage";
+            _typeNameTable[4] = "UserManagementSystem.DepartmentChangePage";
+            _typeNameTable[5] = "UserManagementSystem.DepartmentPage";
+            _typeNameTable[6] = "UserManagementSystem.EmployeePage";
+            _typeNameTable[7] = "UserManagementSystem.Login";
+            _typeNameTable[8] = "UserManagementSystem.MainPage";
+            _typeNameTable[9] = "UserManagementSystem.NavigationFrame";
+            _typeNameTable[10] = "UserManagementSystem.UserPage";
 
-            _typeTable = new global::System.Type[3];
-            _typeTable[0] = typeof(global::UserManagementSystem.MainPage);
+            _typeTable = new global::System.Type[11];
+            _typeTable[0] = typeof(global::UserManagementSystem.AttendancePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::UserManagementSystem.ContractPage);
+            _typeTable[4] = typeof(global::UserManagementSystem.DepartmentChangePage);
+            _typeTable[5] = typeof(global::UserManagementSystem.DepartmentPage);
+            _typeTable[6] = typeof(global::UserManagementSystem.EmployeePage);
+            _typeTable[7] = typeof(global::UserManagementSystem.Login);
+            _typeTable[8] = typeof(global::UserManagementSystem.MainPage);
+            _typeTable[9] = typeof(global::UserManagementSystem.NavigationFrame);
+            _typeTable[10] = typeof(global::UserManagementSystem.UserPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -175,7 +191,15 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_MainPage() { return new global::UserManagementSystem.MainPage(); }
+        private object Activate_0_AttendancePage() { return new global::UserManagementSystem.AttendancePage(); }
+        private object Activate_3_ContractPage() { return new global::UserManagementSystem.ContractPage(); }
+        private object Activate_4_DepartmentChangePage() { return new global::UserManagementSystem.DepartmentChangePage(); }
+        private object Activate_5_DepartmentPage() { return new global::UserManagementSystem.DepartmentPage(); }
+        private object Activate_6_EmployeePage() { return new global::UserManagementSystem.EmployeePage(); }
+        private object Activate_7_Login() { return new global::UserManagementSystem.Login(); }
+        private object Activate_8_MainPage() { return new global::UserManagementSystem.MainPage(); }
+        private object Activate_9_NavigationFrame() { return new global::UserManagementSystem.NavigationFrame(); }
+        private object Activate_10_UserPage() { return new global::UserManagementSystem.UserPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -187,9 +211,9 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  UserManagementSystem.MainPage
+            case 0:   //  UserManagementSystem.AttendancePage
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_MainPage;
+                userType.Activator = Activate_0_AttendancePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -200,6 +224,62 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
 
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 3:   //  UserManagementSystem.ContractPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_3_ContractPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  UserManagementSystem.DepartmentChangePage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_DepartmentChangePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 5:   //  UserManagementSystem.DepartmentPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_5_DepartmentPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 6:   //  UserManagementSystem.EmployeePage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_6_EmployeePage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  UserManagementSystem.Login
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Login;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  UserManagementSystem.MainPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  UserManagementSystem.NavigationFrame
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_NavigationFrame;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 10:   //  UserManagementSystem.UserPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_10_UserPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
             }
             return xamlType;

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -22,6 +24,8 @@ namespace UserManagementSystem
     /// </summary>
     sealed partial class App : Application
     {
+        static public HttpClient client = new HttpClient();
+
         /// <summary>
         /// 初始化单一实例应用程序对象。这是执行的创作代码的第一行，
         /// 已执行，逻辑上等同于 main() 或 WinMain()。
@@ -30,6 +34,10 @@ namespace UserManagementSystem
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            client.BaseAddress = new Uri("http://www.rowtoolong.cn:3000");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         /// <summary>
@@ -66,7 +74,7 @@ namespace UserManagementSystem
                     // 当导航堆栈尚未还原时，导航到第一页，
                     // 并通过将所需信息作为导航参数传入来配置
                     // 参数
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(Login), e.Arguments);
                 }
                 // 确保当前窗口处于活动状态
                 Window.Current.Activate();

@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D929E69DFF7EB3AB3D04B665E5DB0768BDA3FA907A07B14940449D700DD2D667</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>8CA3D6F1341AE2E6F5000ACD41B3705E337D33A06C34CCF39A2E13D07F375170</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8da58559-d903-4b05-9d65-05cd3700754f_1.0.0.0_x86__q8tk47cbbn4wp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8da58559-d903-4b05-9d65-05cd3700754f_q8tk47cbbn4wp!App</RegisteredUserModeAppID>
     <RegisteredPackageID>8da58559-d903-4b05-9d65-05cd3700754f</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-06-28T09:33:47.373</Modified>
+      <Modified>2018-07-02T09:51:38.891</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.exe">
       <PackagePath>entrypoint\UserManagementSystem.exe</PackagePath>
-      <Modified>2018-06-28T09:33:36.820</Modified>
+      <Modified>2018-07-02T09:51:37.845</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -535,20 +535,20 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.xr.xml">
       <PackagePath>UserManagementSystem.xr.xml</PackagePath>
-      <Modified>2018-06-28T09:33:35.760</Modified>
+      <Modified>2018-07-02T09:16:19.944</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-03-16T06:34:33.616</Modified>
+      <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-06-28T09:33:44.601</Modified>
+      <Modified>2018-07-02T09:51:38.500</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\UserManagementSystem.exe">
       <PackagePath>UserManagementSystem.exe</PackagePath>
-      <Modified>2018-06-28T09:33:47.346</Modified>
+      <Modified>2018-07-02T09:51:38.886</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
