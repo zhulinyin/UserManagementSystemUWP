@@ -34,7 +34,7 @@ namespace UserManagementSystem
         private async void Login_Click(object sender, RoutedEventArgs e)
         {
             string username = Username_TextBox.Text;
-            string password = Password_TextBox.Text;
+            string password = Password_TextBox.Password;
             string isSuccess = await LoginAsync("/signin", username, password);
             if (isSuccess.Equals("true"))
             {

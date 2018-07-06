@@ -8,80 +8,84 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-                <ColumnDefinition Width="auto"/>
-            </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Text="编码" VerticalAlignment="Center" HorizontalAlignment="Center"
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" Text="编码" VerticalAlignment="Center" HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="1" Text="姓名" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="1" Text="姓名" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="2" Text="所在部门" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="2" Text="所在部门" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="3" Text="生日" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="3" Text="生日" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="4" Text="状态" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="4" Text="状态" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="5" Text="性别" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="5" Text="性别" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="6" Text="籍贯" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="6" Text="籍贯" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-            <TextBlock Grid.Column="7" Text="身体状况" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="7" Text="身体状况" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-        </Grid>
-        <ScrollViewer Grid.Row="1">
-            <ListView IsItemClickEnabled="False" ItemsSource="{x:Bind ViewModel.Employees}"
+            </Grid>
+            <ScrollViewer Grid.Row="1">
+                <ListView IsItemClickEnabled="False" ItemsSource="{x:Bind ViewModel.Employees}"
                         xmlns:m="using:UserManagementSystem.Models" SelectionMode="None"
                           x:Name="listview">
-                <ListView.ItemContainerStyle>
-                    <Style TargetType="ListViewItem">
-                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-                    </Style>
-                </ListView.ItemContainerStyle>
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="m:Employee">
-                        <Grid Height="70" VerticalAlignment="Top">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" Text="{x:Bind Eid,Mode=TwoWay}" VerticalAlignment="Center" 
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="m:Employee">
+                            <Grid Height="70" VerticalAlignment="Top">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{x:Bind Eid,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="2" Text="{x:Bind Dname,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="2" Text="{x:Bind Dname,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="3" Text="{x:Bind Ebirth,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="3" Text="{x:Bind Ebirth,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="4" Text="{x:Bind Status,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="4" Text="{x:Bind Status,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="5" Text="{x:Bind Esex,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="5" Text="{x:Bind Esex,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="6" Text="{x:Bind Ehometown,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="6" Text="{x:Bind Ehometown,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="7" Text="{x:Bind Ebody,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="7" Text="{x:Bind Ebody,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </ScrollViewer>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Page>
