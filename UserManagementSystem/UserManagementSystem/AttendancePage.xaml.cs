@@ -28,5 +28,25 @@ namespace UserManagementSystem
         {
             this.InitializeComponent();
         }
+
+        private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Update(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Delete(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Setting_Clicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

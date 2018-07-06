@@ -20,6 +20,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" Text="编号" VerticalAlignment="Center" HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
@@ -50,6 +51,7 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
                                 <TextBlock Grid.Column="0" Text="{x:Bind Aid,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
@@ -61,11 +63,23 @@
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
                                 <TextBlock Grid.Column="4" Text="{x:Bind Edate,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
+                                <AppBarButton Grid.Column="5" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked">
+                                    <AppBarButton.Flyout>
+                                        <MenuFlyout>
+                                            <MenuFlyoutItem Text="删除" Click="Delete"/>
+                                            <MenuFlyoutItem Text="更新" Click="Update"/>
+                                        </MenuFlyout>
+                                    </AppBarButton.Flyout>
+                                </AppBarButton>
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollViewer>
+            <CommandBar Grid.Row="1" VerticalAlignment="Bottom"  Background="{ThemeResource SystemControlAccentAcrylicElementAccentMediumHighBrush}">
+                <AppBarButton x:Name="AddAppBarButton" Icon="Add" Label="Add" Click="AddAppBarButton_Click" 
+                          Style="{ThemeResource AppBarButtonRevealStyle}"/>
+            </CommandBar>
         </Grid>
     </Grid>
 </Page>
