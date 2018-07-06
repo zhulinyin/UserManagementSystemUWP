@@ -52,9 +52,10 @@ namespace UserManagementSystem.ViewModels
                 string cid = jsonArray.GetObjectAt(i).GetNamedValue("cid").ToString().TrimStart('\"').TrimEnd('\"');
                 string ename = jsonArray.GetObjectAt(i).GetNamedValue("ename").ToString().TrimStart('\"').TrimEnd('\"');
                 string cwname = jsonArray.GetObjectAt(i).GetNamedValue("name").ToString().TrimStart('\"').TrimEnd('\"');
-                string cdate = jsonArray.GetObjectAt(i).GetNamedValue("cdate").ToString().TrimStart('\"').TrimEnd('\"');
-                string dname = jsonArray.GetObjectAt(i).GetNamedValue("dname").ToString().TrimStart('\"').TrimEnd('\"');
-                DepartmentChanges.Add(new DepartmentChange(cid, ename, cwname, cdate, dname));
+                string cdate = jsonArray.GetObjectAt(i).GetNamedValue("cdate").ToString().TrimStart('\"').TrimEnd('\"').Substring(0, 10);
+                string tname = jsonArray.GetObjectAt(i).GetNamedValue("tname").ToString().TrimStart('\"').TrimEnd('\"');
+                string fname = jsonArray.GetObjectAt(i).GetNamedValue("fname").ToString().TrimStart('\"').TrimEnd('\"');
+                DepartmentChanges.Add(new DepartmentChange(cid, ename, cwname, cdate, tname, fname));
             }
         }
     }

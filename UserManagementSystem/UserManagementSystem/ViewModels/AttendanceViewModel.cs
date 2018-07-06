@@ -52,8 +52,12 @@ namespace UserManagementSystem.ViewModels
                 string aid = jsonArray.GetObjectAt(i).GetNamedValue("aid").ToString().TrimStart('\"').TrimEnd('\"');
                 string ename = jsonArray.GetObjectAt(i).GetNamedValue("ename").ToString().TrimStart('\"').TrimEnd('\"');
                 string awname = jsonArray.GetObjectAt(i).GetNamedValue("name").ToString().TrimStart('\"').TrimEnd('\"');
-                string bdate = jsonArray.GetObjectAt(i).GetNamedValue("bdate").ToString().TrimStart('\"').TrimEnd('\"');
+                string bdate = jsonArray.GetObjectAt(i).GetNamedValue("bdate").ToString().TrimStart('\"').TrimEnd('\"').Substring(0, 10);
                 string edate = jsonArray.GetObjectAt(i).GetNamedValue("edate").ToString().TrimStart('\"').TrimEnd('\"');
+                if (edate != "null")
+                {
+                    edate=edate.Substring(0, 10);
+                }
                 Attendances.Add(new Attendance(aid, ename, awname, bdate, edate));
             }
         }

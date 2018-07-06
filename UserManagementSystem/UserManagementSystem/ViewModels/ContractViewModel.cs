@@ -52,8 +52,8 @@ namespace UserManagementSystem.ViewModels
                 string cid = jsonArray.GetObjectAt(i).GetNamedValue("cid").ToString().TrimStart('\"').TrimEnd('\"');
                 string ename = jsonArray.GetObjectAt(i).GetNamedValue("ename").ToString().TrimStart('\"').TrimEnd('\"');
                 string salary = jsonArray.GetObjectAt(i).GetNamedValue("salary").ToString().TrimStart('\"').TrimEnd('\"');
-                string bdate = jsonArray.GetObjectAt(i).GetNamedValue("bdate").ToString().TrimStart('\"').TrimEnd('\"');
-                string edate = jsonArray.GetObjectAt(i).GetNamedValue("edate").ToString().TrimStart('\"').TrimEnd('\"');
+                string bdate = jsonArray.GetObjectAt(i).GetNamedValue("bdate").ToString().TrimStart('\"').TrimEnd('\"').Substring(0, 10);
+                string edate = jsonArray.GetObjectAt(i).GetNamedValue("edate").ToString().TrimStart('\"').TrimEnd('\"').Substring(0, 10);
                 Contracts.Add(new Contract(cid, ename, salary, bdate, edate));
             }
         }
