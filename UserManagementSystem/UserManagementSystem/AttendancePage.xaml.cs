@@ -31,7 +31,7 @@ namespace UserManagementSystem
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(AttendanceUpdate));
         }
 
         private void Update(object sender, RoutedEventArgs e)

@@ -31,7 +31,7 @@ namespace UserManagementSystem
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(ContractUpdate));
         }
 
         private void Setting_Clicked(object sender, RoutedEventArgs e)

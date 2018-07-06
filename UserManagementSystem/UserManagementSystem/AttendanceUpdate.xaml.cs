@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using UserManagementSystem.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -21,32 +20,24 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class EmployeePage : Page
+    public sealed partial class AttendanceUpdate : Page
     {
-        private EmployeeViewModel ViewModel = EmployeeViewModel.getInstance();
-        public EmployeePage()
+        public AttendanceUpdate()
         {
             this.InitializeComponent();
         }
 
-        private void Setting_Clicked(object sender, RoutedEventArgs e)
+        private void CreateButton_Clicked(object sender, RoutedEventArgs e)
         {
+            Number.Text = "";
+            Name.Text = "";
+            Result.Text = "";
 
         }
 
-        private void Delete(object sender, RoutedEventArgs e)
+        private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-
-        private void Update(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(EmployeeUpdate));
         }
     }
 }

@@ -1,9 +1,13 @@
 App.xbf
 AttendancePage.xbf
+AttendanceUpdate.xbf
 ContractPage.xbf
+ContractUpdate.xbf
 DepartmentChangePage.xbf
 DepartmentPage.xbf
+DepartmentUpdate.xbf
 EmployeePage.xbf
+EmployeeUpdate.xbf
 Login.xbf
 MainPage.xbf
 NavigationFrame.xbf

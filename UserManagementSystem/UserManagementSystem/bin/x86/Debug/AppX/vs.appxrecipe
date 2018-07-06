@@ -31,13 +31,13 @@
     <AppXManifest Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T11:22:55.542</Modified>
+      <Modified>2018-07-06T13:47:10.654</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.exe">
       <PackagePath>entrypoint\UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-06T11:22:54.518</Modified>
+      <Modified>2018-07-06T13:47:09.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -539,7 +539,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.xr.xml">
       <PackagePath>UserManagementSystem.xr.xml</PackagePath>
-      <Modified>2018-07-06T11:22:54.211</Modified>
+      <Modified>2018-07-06T13:47:08.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -548,11 +548,11 @@
     <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T11:22:55.170</Modified>
+      <Modified>2018-07-06T13:47:10.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\UserManagementSystem.exe">
       <PackagePath>UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-06T11:22:55.537</Modified>
+      <Modified>2018-07-06T13:47:10.650</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

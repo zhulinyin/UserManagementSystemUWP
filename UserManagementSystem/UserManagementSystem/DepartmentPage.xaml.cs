@@ -41,6 +41,7 @@ namespace UserManagementSystem
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Navigate(typeof(DepartmentUpdate));
 
         }
 
