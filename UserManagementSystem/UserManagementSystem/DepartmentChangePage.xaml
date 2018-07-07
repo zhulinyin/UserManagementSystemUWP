@@ -72,6 +72,10 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollViewer>
+            <CommandBar Grid.Row="1" VerticalAlignment="Bottom"  Background="{ThemeResource SystemControlAccentAcrylicElementAccentMediumHighBrush}">
+                <AppBarButton x:Name="AddAppBarButton" Icon="Add" Label="Add" Click="AddAppBarButton_Click" 
+                          Style="{ThemeResource AppBarButtonRevealStyle}"/>
+            </CommandBar>
         </Grid>
     </Grid>
 </Page>
