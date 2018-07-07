@@ -43,7 +43,7 @@ namespace UserManagementSystem
 
         private void Update(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(EmployeeAdd));
+            Frame.Navigate(typeof(EmployeeUpdate));
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)

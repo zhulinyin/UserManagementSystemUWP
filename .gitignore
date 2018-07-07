@@ -270,3 +270,5 @@ UserManagementSystem/UserManagementSystem/bin/x86/Debug/App.xbf
 *.appxrecipe
 UserManagementSystem/.vs/UserManagementSystem/v15/.suo
 *.ide
+*.pdb
+*.exe

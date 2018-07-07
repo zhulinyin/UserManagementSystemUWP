@@ -26,12 +26,11 @@ namespace UserManagementSystem
     /// </summary>
     public sealed partial class EmployeeAdd : Page
     {
-        private DepartmentViewModel ViewModel;
+        private DepartmentViewModel ViewModel = DepartmentViewModel.getInstance();
         private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
         public EmployeeAdd()
         {
             this.InitializeComponent();
-            ViewModel = DepartmentViewModel.getInstance();
             if (employeeViewModel.SelectedItem != null)
             {
                 Name.Text = employeeViewModel.SelectedItem.Ename;
