@@ -136,11 +136,19 @@
     <Compile Include="Models\Department.cs" />
     <Compile Include="Models\DepartmentChange.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Reward.cs" />
+    <Compile Include="Models\Training.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="NavigationFrame.xaml.cs">
       <DependentUpon>NavigationFrame.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RewardPage.xaml.cs">
+      <DependentUpon>RewardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingPage.xaml.cs">
+      <DependentUpon>TrainingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
@@ -149,6 +157,8 @@
     <Compile Include="ViewModels\DepartmentChangeViewModel.cs" />
     <Compile Include="ViewModels\DepartmentViewModel.cs" />
     <Compile Include="ViewModels\EmployeeViewModel.cs" />
+    <Compile Include="ViewModels\RewardViewModel.cs" />
+    <Compile Include="ViewModels\TrainingViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -222,6 +232,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="NavigationFrame.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="RewardPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TrainingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

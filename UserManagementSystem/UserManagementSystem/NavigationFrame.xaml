@@ -20,6 +20,8 @@
                 <NavigationViewItem Icon="List" Content="部门" />
                 <NavigationViewItem Icon="List" Content="部门变更" />
                 <NavigationViewItem Icon="ContactPresence" Content="用户" />
+                <NavigationViewItem Icon="ContactPresence" Content="奖励" />
+                <NavigationViewItem Icon="ContactPresence" Content="培训" />
             </NavigationView.MenuItems>
 
             <Frame x:Name="contentFrame">

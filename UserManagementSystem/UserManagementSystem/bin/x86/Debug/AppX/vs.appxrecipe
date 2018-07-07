@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-7QN97TGU</Machine>
-    <WindowsUser>hp</WindowsUser>
+    <Machine>DESKTOP-RSOKM7T</Machine>
+    <WindowsUser>lijiangtao</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>8da58559-d903-4b05-9d65-05cd3700754f</PackageIdentityName>
     <PackageIdentityPublisher>CN=lijiangtao</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>8CA3D6F1341AE2E6F5000ACD41B3705E337D33A06C34CCF39A2E13D07F375170</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>8da58559-d903-4b05-9d65-05cd3700754f_1.0.0.0_x86__q8tk47cbbn4wp</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>8da58559-d903-4b05-9d65-05cd3700754f_q8tk47cbbn4wp!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-07T07:00:37.362</Modified>
+      <Modified>2018-07-07T07:18:59.311</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.exe">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.exe">
       <PackagePath>entrypoint\UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-07T07:00:36.453</Modified>
+      <Modified>2018-07-07T07:18:58.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,64 +495,64 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-11T14:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\z3308.jpg">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\z3308.jpg">
       <PackagePath>Assets\z3308.jpg</PackagePath>
-      <Modified>2018-07-06T08:16:18.334</Modified>
+      <Modified>2018-07-06T15:14:12.458</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2018-07-06T07:02:50.331</Modified>
+      <Modified>2018-06-28T09:25:21.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2018-07-06T07:02:50.313</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.314</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.314</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.314</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.315</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.315</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-06T07:02:50.316</Modified>
+      <Modified>2018-03-09T01:51:05.501</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.xr.xml">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.xr.xml">
       <PackagePath>UserManagementSystem.xr.xml</PackagePath>
-      <Modified>2018-07-07T07:00:36.165</Modified>
+      <Modified>2018-07-07T07:15:17.028</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T09:28:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-07T07:00:37.044</Modified>
+      <Modified>2018-07-07T07:18:59.046</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\UserManagementSystem.exe">
+    <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\UserManagementSystem.exe">
       <PackagePath>UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-07T07:00:37.358</Modified>
+      <Modified>2018-07-07T07:18:59.311</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

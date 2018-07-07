@@ -132,41 +132,45 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[16];
+            _typeNameTable = new string[18];
             _typeNameTable[0] = "UserManagementSystem.AttendancePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "UserManagementSystem.AttendanceUpdate";
+            _typeNameTable[3] = "UserManagementSystem.AttendanceAdd";
             _typeNameTable[4] = "UserManagementSystem.ContractPage";
-            _typeNameTable[5] = "UserManagementSystem.ContractUpdate";
+            _typeNameTable[5] = "UserManagementSystem.ContractAdd";
             _typeNameTable[6] = "UserManagementSystem.DepartmentChangePage";
             _typeNameTable[7] = "UserManagementSystem.DepartmentPage";
-            _typeNameTable[8] = "UserManagementSystem.DepartmentUpdate";
+            _typeNameTable[8] = "UserManagementSystem.DepartmentAdd";
             _typeNameTable[9] = "UserManagementSystem.EmployeePage";
             _typeNameTable[10] = "UserManagementSystem.EmployeeAdd";
             _typeNameTable[11] = "UserManagementSystem.EmployeeUpdate";
             _typeNameTable[12] = "UserManagementSystem.Login";
             _typeNameTable[13] = "UserManagementSystem.MainPage";
             _typeNameTable[14] = "UserManagementSystem.NavigationFrame";
-            _typeNameTable[15] = "UserManagementSystem.UserPage";
+            _typeNameTable[15] = "UserManagementSystem.RewardPage";
+            _typeNameTable[16] = "UserManagementSystem.TrainingPage";
+            _typeNameTable[17] = "UserManagementSystem.UserPage";
 
-            _typeTable = new global::System.Type[16];
+            _typeTable = new global::System.Type[18];
             _typeTable[0] = typeof(global::UserManagementSystem.AttendancePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::UserManagementSystem.AttendanceUpdate);
+            _typeTable[3] = typeof(global::UserManagementSystem.AttendanceAdd);
             _typeTable[4] = typeof(global::UserManagementSystem.ContractPage);
-            _typeTable[5] = typeof(global::UserManagementSystem.ContractUpdate);
+            _typeTable[5] = typeof(global::UserManagementSystem.ContractAdd);
             _typeTable[6] = typeof(global::UserManagementSystem.DepartmentChangePage);
             _typeTable[7] = typeof(global::UserManagementSystem.DepartmentPage);
-            _typeTable[8] = typeof(global::UserManagementSystem.DepartmentUpdate);
+            _typeTable[8] = typeof(global::UserManagementSystem.DepartmentAdd);
             _typeTable[9] = typeof(global::UserManagementSystem.EmployeePage);
             _typeTable[10] = typeof(global::UserManagementSystem.EmployeeAdd);
             _typeTable[11] = typeof(global::UserManagementSystem.EmployeeUpdate);
             _typeTable[12] = typeof(global::UserManagementSystem.Login);
             _typeTable[13] = typeof(global::UserManagementSystem.MainPage);
             _typeTable[14] = typeof(global::UserManagementSystem.NavigationFrame);
-            _typeTable[15] = typeof(global::UserManagementSystem.UserPage);
+            _typeTable[15] = typeof(global::UserManagementSystem.RewardPage);
+            _typeTable[16] = typeof(global::UserManagementSystem.TrainingPage);
+            _typeTable[17] = typeof(global::UserManagementSystem.UserPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -202,19 +206,21 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
         }
 
         private object Activate_0_AttendancePage() { return new global::UserManagementSystem.AttendancePage(); }
-        private object Activate_3_AttendanceUpdate() { return new global::UserManagementSystem.AttendanceUpdate(); }
+        private object Activate_3_AttendanceAdd() { return new global::UserManagementSystem.AttendanceAdd(); }
         private object Activate_4_ContractPage() { return new global::UserManagementSystem.ContractPage(); }
-        private object Activate_5_ContractUpdate() { return new global::UserManagementSystem.ContractUpdate(); }
+        private object Activate_5_ContractAdd() { return new global::UserManagementSystem.ContractAdd(); }
         private object Activate_6_DepartmentChangePage() { return new global::UserManagementSystem.DepartmentChangePage(); }
         private object Activate_7_DepartmentPage() { return new global::UserManagementSystem.DepartmentPage(); }
-        private object Activate_8_DepartmentUpdate() { return new global::UserManagementSystem.DepartmentUpdate(); }
+        private object Activate_8_DepartmentAdd() { return new global::UserManagementSystem.DepartmentAdd(); }
         private object Activate_9_EmployeePage() { return new global::UserManagementSystem.EmployeePage(); }
         private object Activate_10_EmployeeAdd() { return new global::UserManagementSystem.EmployeeAdd(); }
         private object Activate_11_EmployeeUpdate() { return new global::UserManagementSystem.EmployeeUpdate(); }
         private object Activate_12_Login() { return new global::UserManagementSystem.Login(); }
         private object Activate_13_MainPage() { return new global::UserManagementSystem.MainPage(); }
         private object Activate_14_NavigationFrame() { return new global::UserManagementSystem.NavigationFrame(); }
-        private object Activate_15_UserPage() { return new global::UserManagementSystem.UserPage(); }
+        private object Activate_15_RewardPage() { return new global::UserManagementSystem.RewardPage(); }
+        private object Activate_16_TrainingPage() { return new global::UserManagementSystem.TrainingPage(); }
+        private object Activate_17_UserPage() { return new global::UserManagementSystem.UserPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -241,9 +247,9 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
                 xamlType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  UserManagementSystem.AttendanceUpdate
+            case 3:   //  UserManagementSystem.AttendanceAdd
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AttendanceUpdate;
+                userType.Activator = Activate_3_AttendanceAdd;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -255,9 +261,9 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  UserManagementSystem.ContractUpdate
+            case 5:   //  UserManagementSystem.ContractAdd
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_ContractUpdate;
+                userType.Activator = Activate_5_ContractAdd;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -276,9 +282,9 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  UserManagementSystem.DepartmentUpdate
+            case 8:   //  UserManagementSystem.DepartmentAdd
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_DepartmentUpdate;
+                userType.Activator = Activate_8_DepartmentAdd;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -325,9 +331,23 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  UserManagementSystem.UserPage
+            case 15:   //  UserManagementSystem.RewardPage
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_UserPage;
+                userType.Activator = Activate_15_RewardPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  UserManagementSystem.TrainingPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_16_TrainingPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  UserManagementSystem.UserPage
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_UserPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

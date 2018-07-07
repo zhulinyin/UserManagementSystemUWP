@@ -1,1 +1,1 @@
-D:\学习考试选课\大二下学习资料\数据库系统\实验作业\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\UserManagementSystem.csproj;x86
+C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\UserManagementSystem.csproj;x86
