@@ -153,6 +153,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>
+    <RootType FullName="UserManagementSystem.EmployeeAdd" />
     <RootType FullName="UserManagementSystem.EmployeeUpdate" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
