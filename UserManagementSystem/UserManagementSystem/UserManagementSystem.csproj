@@ -122,6 +122,9 @@
     <Compile Include="EmployeeAdd.xaml.cs">
       <DependentUpon>EmployeeAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeUpdate.xaml.cs">
+      <DependentUpon>EmployeeUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
@@ -203,6 +206,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="EmployeeAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeeUpdate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -14,12 +14,12 @@
                 <NavigationViewItemHeader Content="UserManagementSystem"/>
                 <NavigationViewItem Icon="Home"  Content="首页"  ToolTipService.ToolTip="Home"/>
                 <NavigationViewItemSeparator/>
-                <NavigationViewItem Icon="Calendar" Content="员工" />
-                <NavigationViewItem Icon="Calendar" Content="合同" />
+                <NavigationViewItem Icon="Contact" Content="员工" />
+                <NavigationViewItem Icon="Page2" Content="合同" />
                 <NavigationViewItem Icon="Calendar" Content="考勤" />
-                <NavigationViewItem Icon="Calendar" Content="部门" />
-                <NavigationViewItem Icon="Calendar" Content="部门变更" />
-                <NavigationViewItem Icon="Calendar" Content="用户" />
+                <NavigationViewItem Icon="List" Content="部门" />
+                <NavigationViewItem Icon="List" Content="部门变更" />
+                <NavigationViewItem Icon="ContactPresence" Content="用户" />
             </NavigationView.MenuItems>
 
             <Frame x:Name="contentFrame">
