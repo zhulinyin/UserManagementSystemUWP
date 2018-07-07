@@ -17,8 +17,18 @@
             <Grid Grid.Row="1">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <TextBox x:Name="Number" Width="350" Header="编码" Margin="0,12,0,0" />
-                        <TextBox x:Name="Name" Width="350" Margin="0,12,0,0" Header="员工姓名" />
+                        <ComboBox x:Name="Employee" Header="员工" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" 
+                                  ItemsSource="{x:Bind employeeViewModel.Employees}" 
+                                  xmlns:m="using:UserManagementSystem.Models">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate x:DataType="m:Employee">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{x:Bind Eid}" Margin="0,0,10,0" />
+                                        <TextBlock Text="{x:Bind Ename}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
                         <TextBox x:Name="Salary" Width="350" Margin="0,12,0,0" Header="工资" />
                         <DatePicker x:Name="BeginTime" Width="350" Margin="0, 12, 0, 0" HorizontalAlignment="Center" Header="开始时间"/>
                         <DatePicker x:Name="EndTime" Width="350" Margin="0, 12, 0, 0" HorizontalAlignment="Center" Header="结束时间"/>

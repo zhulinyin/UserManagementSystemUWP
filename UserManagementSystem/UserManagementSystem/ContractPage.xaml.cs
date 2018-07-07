@@ -36,7 +36,9 @@ namespace UserManagementSystem
 
         private void Setting_Clicked(object sender, RoutedEventArgs e)
         {
-
+            var data = (sender as FrameworkElement).DataContext;
+            var item = listview.ContainerFromItem(data) as ListViewItem;
+            ViewModel.SelectedItem = item.Content as Models.Contract;
         }
 
         private void Delete(object sender, RoutedEventArgs e)
@@ -46,7 +48,7 @@ namespace UserManagementSystem
 
         private void Update(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(ContractUpdate));
         }
     }
 }

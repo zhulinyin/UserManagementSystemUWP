@@ -51,6 +51,11 @@ namespace UserManagementSystem.ViewModels
             {
                 string username = jsonArray.GetObjectAt(i).GetNamedValue("username").ToString().TrimStart('\"').TrimEnd('\"');
                 string uright = jsonArray.GetObjectAt(i).GetNamedValue("uright").ToString().TrimStart('\"').TrimEnd('\"');
+                if (uright == "1")
+                {
+                    uright = "管理员";
+                }
+                else uright = "普通";
                 Users.Add(new User(username,uright));
             }
 

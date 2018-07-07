@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            Departments.Clear();
             string str = await GetDepartmentsAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);
@@ -56,11 +57,12 @@ namespace UserManagementSystem.ViewModels
             }
         }
 
-        public async Task<bool> CreateItem(string name)
+        public async Task<bool> CreateItem(string name, string eid)
         {
             var content = new FormUrlEncodedContent(new Dictionary<string, string>()
             {
-                {"name",name }
+                {"name",name },
+                {"eid",eid }
             });
             var response = await App.client.PostAsync("/newDepartment", content);
             var resdata = await response.Content.ReadAsStringAsync();
@@ -72,12 +74,13 @@ namespace UserManagementSystem.ViewModels
             else return false;
         }
 
-        public async Task<bool> UpdateItem(string did, string name)
+        public async Task<bool> UpdateItem(string did, string name, string eid)
         {
             var content = new FormUrlEncodedContent(new Dictionary<string, string>()
             {
                 {"did",did },
-                {"name",name }
+                {"name",name },
+                {"eid",eid }
             });
             var response = await App.client.PutAsync("/updateDepartment", content);
             var resdata = await response.Content.ReadAsStringAsync();

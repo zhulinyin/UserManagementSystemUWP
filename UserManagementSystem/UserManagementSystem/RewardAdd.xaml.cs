@@ -22,37 +22,35 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class AttendanceAdd : Page
+    public sealed partial class RewardAdd : Page
     {
         private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
-        private AttendanceViewModel attendanceViewModel = AttendanceViewModel.getInstance();
-        public AttendanceAdd()
+        private RewardViewModel rewardViewModel = RewardViewModel.getInstance();
+        public RewardAdd()
         {
             this.InitializeComponent();
         }
 
         private async void CreateButton_Clicked(object sender, RoutedEventArgs e)
         {
-            string beginTime = BeginTime.Date.Year + "-" + BeginTime.Date.Month + "-" + BeginTime.Date.Day;
-            string endTime = EndTime.Date.Year + "-" + EndTime.Date.Month + "-" + EndTime.Date.Day;
-            string result = ((ComboBoxItem)Result.SelectedItem).Content.ToString();
-            if (result.Equals("leave"))
+            string time = Time.Date.Year + "-" + Time.Date.Month + "-" + Time.Date.Day;
+            string reason = Reason.Text;
+            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();
+            string money = Money.Text;
+            if (way.Equals("bonus"))
             {
-                result = "1";
+                way = "1";
             }
-            else if (result.Equals("completion"))
+            else if (way.Equals("fine"))
             {
-                result = "2";
+                way = "2";
             }
-            else if (result.Equals("overtime"))
-            {
-                result = "3";
-            }
+            
             string eid = ((Employee)Employee.SelectedItem).Eid;
-            bool isSuccess = await attendanceViewModel.CreateItem(eid, result, beginTime, endTime);
+            bool isSuccess = await rewardViewModel.CreateItem(eid, reason, way, time, money);
             if (isSuccess)
             {
-                Frame.Navigate(typeof(AttendancePage));
+                Frame.Navigate(typeof(RewardPage));
             }
             else
             {
@@ -70,8 +68,9 @@ namespace UserManagementSystem
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)
         {
-            BeginTime.Date = DateTimeOffset.Now;
-            EndTime.Date = DateTimeOffset.Now;
+            Time.Date = DateTimeOffset.Now;
+            Money.Text = "";
+            Reason.Text = "";
         }
     }
 }

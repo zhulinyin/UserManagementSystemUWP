@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="UserManagementSystem.AttendanceAdd"
+    x:Class="UserManagementSystem.TrainingAdd"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:UserManagementSystem"
@@ -13,7 +13,7 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="考勤信息" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></TextBlock>
+            <TextBlock Text="培训信息" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></TextBlock>
             <Grid Grid.Row="1">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>
@@ -29,10 +29,9 @@
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
-                        <ComboBox x:Name="Result" Header="考勤结果" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0">
-                            <ComboBoxItem Content="leave" />
-                            <ComboBoxItem Content="completion" />
-                            <ComboBoxItem Content="overtime" />
+                        <ComboBox x:Name="Way" Header="培训方式" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0">
+                            <ComboBoxItem Content="student" />
+                            <ComboBoxItem Content="teacher" />
                         </ComboBox>
                         <DatePicker x:Name="BeginTime" Width="350" Margin="0, 12, 0, 0" HorizontalAlignment="Center" Header="开始时间"/>
                         <DatePicker x:Name="EndTime" Width="350" Margin="0, 12, 0, 0" HorizontalAlignment="Center" Header="结束时间"/>

@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            DepartmentChanges.Clear();
             string str = await GetDepartmentChangesAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-07T07:45:47.639</Modified>
+      <Modified>2018-07-07T12:42:43.541</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.exe">
       <PackagePath>entrypoint\UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-07T07:45:47.255</Modified>
+      <Modified>2018-07-07T12:42:42.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\NuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -539,7 +539,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\UserManagementSystem.xr.xml">
       <PackagePath>UserManagementSystem.xr.xml</PackagePath>
-      <Modified>2018-07-07T07:15:17.028</Modified>
+      <Modified>2018-07-07T12:34:55.212</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -548,11 +548,11 @@
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-07-07T07:18:59.046</Modified>
+      <Modified>2018-07-07T12:42:43.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\study\UserManagementSystemUWP\UserManagementSystem\UserManagementSystem\bin\x86\Debug\Core\UserManagementSystem.exe">
       <PackagePath>UserManagementSystem.exe</PackagePath>
-      <Modified>2018-07-07T07:45:47.635</Modified>
+      <Modified>2018-07-07T12:42:43.526</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

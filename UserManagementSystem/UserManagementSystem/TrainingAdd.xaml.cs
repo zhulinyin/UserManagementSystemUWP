@@ -22,11 +22,12 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class AttendanceAdd : Page
+    public sealed partial class TrainingAdd : Page
     {
         private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
-        private AttendanceViewModel attendanceViewModel = AttendanceViewModel.getInstance();
-        public AttendanceAdd()
+        private TrainingViewModel trainingViewModel = TrainingViewModel.getInstance();
+
+        public TrainingAdd()
         {
             this.InitializeComponent();
         }
@@ -35,24 +36,21 @@ namespace UserManagementSystem
         {
             string beginTime = BeginTime.Date.Year + "-" + BeginTime.Date.Month + "-" + BeginTime.Date.Day;
             string endTime = EndTime.Date.Year + "-" + EndTime.Date.Month + "-" + EndTime.Date.Day;
-            string result = ((ComboBoxItem)Result.SelectedItem).Content.ToString();
-            if (result.Equals("leave"))
+            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();
+            if (way.Equals("student"))
             {
-                result = "1";
+                way = "1";
             }
-            else if (result.Equals("completion"))
+            else if (way.Equals("teacher"))
             {
-                result = "2";
+                way = "2";
             }
-            else if (result.Equals("overtime"))
-            {
-                result = "3";
-            }
+
             string eid = ((Employee)Employee.SelectedItem).Eid;
-            bool isSuccess = await attendanceViewModel.CreateItem(eid, result, beginTime, endTime);
+            bool isSuccess = await trainingViewModel.CreateItem(eid, way, beginTime, endTime);
             if (isSuccess)
             {
-                Frame.Navigate(typeof(AttendancePage));
+                Frame.Navigate(typeof(TrainingPage));
             }
             else
             {

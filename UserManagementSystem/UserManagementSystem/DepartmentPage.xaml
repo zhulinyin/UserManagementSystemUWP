@@ -28,7 +28,7 @@
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0" />
                 <TextBlock Grid.Column="1" Text="名称" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                <TextBlock Grid.Column="2" Text="员工姓名" VerticalAlignment="Center"  HorizontalAlignment="Center"
+                <TextBlock Grid.Column="2" Text="管理员" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
             </Grid>
             <ScrollViewer Grid.Row="1">

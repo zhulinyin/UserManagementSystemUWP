@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            Attendances.Clear();
             string str = await GetAttendancesAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);

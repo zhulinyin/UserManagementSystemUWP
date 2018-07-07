@@ -107,6 +107,9 @@
     <Compile Include="ContractAdd.xaml.cs">
       <DependentUpon>ContractAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContractUpdate.xaml.cs">
+      <DependentUpon>ContractUpdate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DepartmentChangePage.xaml.cs">
       <DependentUpon>DepartmentChangePage.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,7 @@
     <Compile Include="DepartmentAdd.xaml.cs">
       <DependentUpon>DepartmentAdd.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DepartmentUpdate.xaml.cs" />
     <Compile Include="EmployeePage.xaml.cs">
       <DependentUpon>EmployeePage.xaml</DependentUpon>
     </Compile>
@@ -143,11 +147,23 @@
       <DependentUpon>NavigationFrame.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RewardAdd.xaml.cs">
+      <DependentUpon>RewardAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="RewardPage.xaml.cs">
       <DependentUpon>RewardPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RewardUpdate.xaml.cs">
+      <DependentUpon>RewardUpdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingAdd.xaml.cs">
+      <DependentUpon>TrainingAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TrainingPage.xaml.cs">
       <DependentUpon>TrainingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingUpdate.xaml.cs">
+      <DependentUpon>TrainingUpdate.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
@@ -199,6 +215,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ContractUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="DepartmentChangePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -210,6 +230,10 @@
     <Page Include="DepartmentAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DepartmentUpdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="EmployeePage.xaml">
       <SubType>Designer</SubType>
@@ -235,13 +259,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="RewardAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RewardPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="RewardUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TrainingAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TrainingPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TrainingUpdate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserPage.xaml">
       <SubType>Designer</SubType>

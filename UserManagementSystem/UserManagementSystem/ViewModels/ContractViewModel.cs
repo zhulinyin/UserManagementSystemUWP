@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            Contracts.Clear();
             string str = await GetContractsAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);

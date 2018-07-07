@@ -30,33 +30,7 @@ namespace UserManagementSystem
         private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
         public EmployeeAdd()
         {
-            this.InitializeComponent();
-            if (employeeViewModel.SelectedItem != null)
-            {
-                Name.Text = employeeViewModel.SelectedItem.Ename;
-                Birthday.Date = new DateTimeOffset();
-                Location.Text = employeeViewModel.SelectedItem.Ehometown;
-                var sexs = SexSelect.Items;
-                for(int i = 0; i < sexs.Count; i++)
-                {
-                    string s = ((ComboBoxItem)sexs[i]).Content.ToString();
-                    if (employeeViewModel.SelectedItem.Esex.Equals(s))
-                    {
-                        SexSelect.SelectedIndex = i;
-                        break;
-                    }
-                }
-                var departments = DeptSelect.Items;
-                for(int i = 0; i < departments.Count; i++)
-                {
-                    string s = ((ComboBoxItem)departments[i]).Content.ToString();
-                    if (employeeViewModel.SelectedItem.Dname.Equals(s))
-                    {
-                        SexSelect.SelectedIndex = i;
-                        break;
-                    }
-                }
-            }
+            this.InitializeComponent();            
         }
 
         private void datePicker_DateChanged(object sender, DatePickerValueChangedEventArgs e)

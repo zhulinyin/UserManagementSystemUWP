@@ -91,18 +91,22 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Orientation" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Width" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Header" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Name" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TimePicker">
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Header" />
+      <RootEvent Name="DateChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Width" />
@@ -122,16 +126,20 @@
       <RootProperty Name="Background" />
       <RootEvent Name="Click" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
+      <RootProperty Name="Content" />
+    </RootType>
     <RootType FullName="UserManagementSystem.AttendanceAdd" />
     <RootType FullName="UserManagementSystem.ContractPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Header" />
-      <RootEvent Name="DateChanged" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="UserManagementSystem.ContractAdd" />
+    <RootType FullName="UserManagementSystem.ContractUpdate" />
     <RootType FullName="UserManagementSystem.DepartmentChangePage" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
@@ -139,20 +147,8 @@
     </RootType>
     <RootType FullName="UserManagementSystem.DepartmentPage" />
     <RootType FullName="UserManagementSystem.DepartmentAdd" />
+    <RootType FullName="UserManagementSystem.DepartmentUpdate" />
     <RootType FullName="UserManagementSystem.EmployeePage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="Items" />
-      <RootEvent Name="SelectionChanged" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="UserManagementSystem.EmployeeAdd" />
     <RootType FullName="UserManagementSystem.EmployeeUpdate" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
@@ -183,8 +179,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItemSeparator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
     <RootType FullName="UserManagementSystem.NavigationFrame" />
+    <RootType FullName="UserManagementSystem.RewardAdd" />
     <RootType FullName="UserManagementSystem.RewardPage" />
+    <RootType FullName="UserManagementSystem.RewardUpdate" />
+    <RootType FullName="UserManagementSystem.TrainingAdd" />
     <RootType FullName="UserManagementSystem.TrainingPage" />
+    <RootType FullName="UserManagementSystem.TrainingUpdate" />
     <RootType FullName="UserManagementSystem.UserPage" />
   </Roots.RootTypes>
 </Roots>
