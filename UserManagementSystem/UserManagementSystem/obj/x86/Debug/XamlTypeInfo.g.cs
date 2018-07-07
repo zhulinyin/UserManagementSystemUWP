@@ -132,7 +132,7 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[25];
+            _typeNameTable = new string[26];
             _typeNameTable[0] = "UserManagementSystem.AttendancePage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -158,8 +158,9 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
             _typeNameTable[22] = "UserManagementSystem.TrainingPage";
             _typeNameTable[23] = "UserManagementSystem.TrainingUpdate";
             _typeNameTable[24] = "UserManagementSystem.UserPage";
+            _typeNameTable[25] = "UserManagementSystem.UserUpdate";
 
-            _typeTable = new global::System.Type[25];
+            _typeTable = new global::System.Type[26];
             _typeTable[0] = typeof(global::UserManagementSystem.AttendancePage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -185,6 +186,7 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
             _typeTable[22] = typeof(global::UserManagementSystem.TrainingPage);
             _typeTable[23] = typeof(global::UserManagementSystem.TrainingUpdate);
             _typeTable[24] = typeof(global::UserManagementSystem.UserPage);
+            _typeTable[25] = typeof(global::UserManagementSystem.UserUpdate);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -242,6 +244,7 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
         private object Activate_22_TrainingPage() { return new global::UserManagementSystem.TrainingPage(); }
         private object Activate_23_TrainingUpdate() { return new global::UserManagementSystem.TrainingUpdate(); }
         private object Activate_24_UserPage() { return new global::UserManagementSystem.UserPage(); }
+        private object Activate_25_UserUpdate() { return new global::UserManagementSystem.UserUpdate(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -418,6 +421,13 @@ namespace UserManagementSystem.UserManagementSystem_XamlTypeInfo
             case 24:   //  UserManagementSystem.UserPage
                 userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_24_UserPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  UserManagementSystem.UserUpdate
+                userType = new global::UserManagementSystem.UserManagementSystem_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_25_UserUpdate;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

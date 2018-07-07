@@ -24,8 +24,9 @@ namespace UserManagementSystem
     /// </summary>
     public sealed partial class DepartmentChangeAdd : Page
     {
-        private DepartmentViewModel ViewModel;
-        private DepartmentChangeViewModel employeeViewModel = DepartmentChangeViewModel.getInstance();
+        private DepartmentViewModel ViewModel = DepartmentViewModel.getInstance();
+        private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
+        private DepartmentChangeViewModel departmentChangeViewModel = DepartmentChangeViewModel.getInstance();
         public DepartmentChangeAdd()
         {
             this.InitializeComponent();
@@ -46,9 +47,55 @@ namespace UserManagementSystem
 
         }
 
-        private void CreateButton_Clicked(object sender, RoutedEventArgs e)
+        private async void CreateButton_Clicked(object sender, RoutedEventArgs e)
         {
+            Employee em = ((Employee)Employee.SelectedItem);
+            string eid;
+            if (em == null)
+            {
+                eid = "0";
+            }
+            else eid = em.Eid;
+            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();
+            if (way.Equals("take office"))
+            {
+                way = "1";
+            }
+            else if (way.Equals("departure"))
+            {
+                way = "2";
+            }
+            else if(way== "transfer department")
+            {
+                way = "3";
+            }
+            string time = Time.Date.Year + "-" + Time.Date.Month + "-" + Time.Date.Day;
+            string tdid=((Department)tDept.SelectedItem).Did;
+            string fdname = em.Dname;
+            string fdid = null;
+            for(int i=0;i< ViewModel.Departments.Count; i++)
+            {
+                if(fdname== ViewModel.Departments[i].Dname)
+                {
+                    fdid = ViewModel.Departments[i].Did;
+                }
+            }
+            bool isSuccess = await departmentChangeViewModel.CreateItem(eid, way,time,tdid,fdid);
+            if (isSuccess)
+            {
+                Frame.Navigate(typeof(DepartmentChangePage));
+            }
+            else
+            {
+                showDialog("添加失败");
+            }
+        }
 
+        private async void showDialog(string text)
+        {
+            var messageDialog = new Windows.UI.Popups.MessageDialog(text);
+            messageDialog.Commands.Add(new Windows.UI.Popups.UICommand("关闭"));
+            await messageDialog.ShowAsync();
         }
 
         private void CancelButton_Click(object sender, RoutedEventArgs e)

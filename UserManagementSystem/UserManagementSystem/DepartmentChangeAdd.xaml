@@ -17,26 +17,32 @@
             <Grid Grid.Row="1">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <TextBox x:Name="Number" Width="350" Header="员工编号" Margin="0,12,0,0" />
-                        <TextBox x:Name="Way" Width="350" Margin="0,12,0,0" Header="变更方式" />
-                        <DatePicker x:Name="Time" Width="350" Margin="0,12,0,0" Header="变更时间" HorizontalAlignment="Center" DateChanged="datePicker_DateChanged" />
-                        <ComboBox x:Name="fDept" Header="转出部门" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" 
-                                  SelectionChanged="Dept_SelectionChanged1" ItemsSource="{x:Bind ViewModel.Departments}" 
+                        <ComboBox x:Name="Employee" Header="员工" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" 
+                                  ItemsSource="{x:Bind employeeViewModel.Employees}" 
                                   xmlns:m="using:UserManagementSystem.Models">
                             <ComboBox.ItemTemplate>
-                                <DataTemplate x:DataType="m:Department">
+                                <DataTemplate x:DataType="m:Employee">
                                     <StackPanel Orientation="Horizontal">
-                                        <TextBlock Text="{x:Bind Dname}" />
+                                        <TextBlock Text="{x:Bind Eid}" Margin="0,0,10,0" />
+                                        <TextBlock Text="{x:Bind Ename}" />
                                     </StackPanel>
                                 </DataTemplate>
                             </ComboBox.ItemTemplate>
                         </ComboBox>
+                        <ComboBox x:Name="Way" Header="变更方式" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0">
+                            <ComboBoxItem Content="take office" />
+                            <ComboBoxItem Content="departure" />
+                            <ComboBoxItem Content="transfer department" />
+                        </ComboBox>
+                        <DatePicker x:Name="Time" Width="350" Margin="0,12,0,0" Header="变更时间" HorizontalAlignment="Center" DateChanged="datePicker_DateChanged" />
+                        
                         <ComboBox x:Name="tDept" Header="转入部门" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" 
                                   SelectionChanged="Dept_SelectionChanged2" ItemsSource="{x:Bind ViewModel.Departments}" 
                                   xmlns:m="using:UserManagementSystem.Models">
                             <ComboBox.ItemTemplate>
                                 <DataTemplate x:DataType="m:Department">
                                     <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{x:Bind Did}"  Margin="0,0,10,0"/>
                                         <TextBlock Text="{x:Bind Dname}" />
                                     </StackPanel>
                                 </DataTemplate>

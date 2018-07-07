@@ -187,5 +187,6 @@
     <RootType FullName="UserManagementSystem.TrainingPage" />
     <RootType FullName="UserManagementSystem.TrainingUpdate" />
     <RootType FullName="UserManagementSystem.UserPage" />
+    <RootType FullName="UserManagementSystem.UserUpdate" />
   </Roots.RootTypes>
 </Roots>
