@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            Employees.Clear();
             string str = await GetEmployeesAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);
@@ -58,8 +59,49 @@ namespace UserManagementSystem.ViewModels
                 string ehometown = jsonArray.GetObjectAt(i).GetNamedValue("ehometown").ToString().TrimStart('\"').TrimEnd('\"');
                 string ebody = jsonArray.GetObjectAt(i).GetNamedValue("ebody").ToString().TrimStart('\"').TrimEnd('\"');
                 Employees.Add(new Employee(eid, ename, dname, ebirth, status, esex, ehometown, ebody));
+            }            
+        }
+
+        public async Task<bool> CreateItem(string name, string birth, string sex, string hometown, string body,
+            string department)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"name",name },
+                {"birth",birth },
+                {"sex",sex },
+                {"hometown",hometown },
+                {"body",body },
+                {"department",department }
+            });
+            var response = await App.client.PostAsync("/newEmployee", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
             }
-            
+            else return false;
+        }
+
+        public async Task<bool> UpdateItem(string id, string name, string birth, string hometown, string body)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"eid",id },
+                {"name",name },
+                {"birth",birth },
+                {"hometown",hometown },
+                {"body",body }
+            });
+            var response = await App.client.PutAsync("/newEmployee", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
         }
     }
 }

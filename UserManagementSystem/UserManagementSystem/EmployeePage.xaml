@@ -45,7 +45,7 @@
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
             </Grid>
             <ScrollViewer Grid.Row="1">
-                <ListView IsItemClickEnabled="False" ItemsSource="{x:Bind ViewModel.Employees}"
+                <ListView IsItemClickEnabled="True" ItemsSource="{x:Bind ViewModel.Employees}"
                         xmlns:m="using:UserManagementSystem.Models" SelectionMode="None"
                           x:Name="listview">
                     <ListView.ItemContainerStyle>

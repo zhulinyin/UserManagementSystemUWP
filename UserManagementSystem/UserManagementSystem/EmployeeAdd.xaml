@@ -17,14 +17,22 @@
             <Grid Grid.Row="1">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <TextBox x:Name="Number" Width="350" Header="编码" Margin="0,12,0,0" />
                         <TextBox x:Name="Name" Width="350" Margin="0,12,0,0" Header="姓名" />
-                        <ComboBox x:Name="DeptSelect" Header="所在部门" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" SelectionChanged="Dept_SelectionChanged"/>
+                        <ComboBox x:Name="DeptSelect" Header="所在部门" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" 
+                                  SelectionChanged="Dept_SelectionChanged" ItemsSource="{x:Bind ViewModel.Departments}" 
+                                  xmlns:m="using:UserManagementSystem.Models">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate x:DataType="m:Department">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{x:Bind Dname}" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
                         <DatePicker x:Name="Birthday" Width="350" Margin="0,12,0,0" Header="生日" HorizontalAlignment="Center" DateChanged="datePicker_DateChanged" />
-                        <TextBox x:Name="Situation" Width="350" Margin="0,12,0,0" Header="状态" />
                         <ComboBox x:Name="SexSelect" Header="性别" Width="350" HorizontalAlignment="Center" Margin="0,12, 0,0" SelectionChanged="Sex_SelectionChanged">
-                            <ComboBoxItem Content="女" />
-                            <ComboBoxItem Content="男" />
+                            <ComboBoxItem Content="M" />
+                            <ComboBoxItem Content="F" />
                         </ComboBox>
                         <TextBox x:Name="Location" Width="350" Margin="0,12,0,0" Header="籍贯" />
                         <TextBox x:Name="Health" Width="350" Margin="0,12,0,0" Header="身体状况" />

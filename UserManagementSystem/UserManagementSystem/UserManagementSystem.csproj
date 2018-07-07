@@ -98,14 +98,14 @@
     <Compile Include="AttendancePage.xaml.cs">
       <DependentUpon>AttendancePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AttendanceUpdate.xaml.cs">
-      <DependentUpon>AttendanceUpdate.xaml</DependentUpon>
+    <Compile Include="AttendanceAdd.xaml.cs">
+      <DependentUpon>AttendanceAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContractPage.xaml.cs">
       <DependentUpon>ContractPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ContractUpdate.xaml.cs">
-      <DependentUpon>ContractUpdate.xaml</DependentUpon>
+    <Compile Include="ContractAdd.xaml.cs">
+      <DependentUpon>ContractAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="DepartmentChangePage.xaml.cs">
       <DependentUpon>DepartmentChangePage.xaml</DependentUpon>
@@ -113,14 +113,14 @@
     <Compile Include="DepartmentPage.xaml.cs">
       <DependentUpon>DepartmentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DepartmentUpdate.xaml.cs">
-      <DependentUpon>DepartmentUpdate.xaml</DependentUpon>
+    <Compile Include="DepartmentAdd.xaml.cs">
+      <DependentUpon>DepartmentAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="EmployeePage.xaml.cs">
       <DependentUpon>EmployeePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeUpdate.xaml.cs">
-      <DependentUpon>EmployeeUpdate.xaml</DependentUpon>
+    <Compile Include="EmployeeAdd.xaml.cs">
+      <DependentUpon>EmployeeAdd.xaml</DependentUpon>
     </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
@@ -174,7 +174,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AttendanceUpdate.xaml">
+    <Page Include="AttendanceAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -182,7 +182,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ContractUpdate.xaml">
+    <Page Include="ContractAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,7 +194,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DepartmentUpdate.xaml">
+    <Page Include="DepartmentAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -202,7 +202,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EmployeeUpdate.xaml">
+    <Page Include="EmployeeAdd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
