@@ -268,3 +268,5 @@ UserManagementSystem/UserManagementSystem/bin/x86/Debug/App.xbf
 *.xbf
 *.pri
 *.appxrecipe
+UserManagementSystem/.vs/UserManagementSystem/v15/.suo
+*.ide
