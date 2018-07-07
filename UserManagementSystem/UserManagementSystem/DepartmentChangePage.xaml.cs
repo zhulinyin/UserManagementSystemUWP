@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class DepartmentChangePage : Page
     {
         private DepartmentChangeViewModel ViewModel = DepartmentChangeViewModel.getInstance();
+        private bool manager = App.manager;
         public DepartmentChangePage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)

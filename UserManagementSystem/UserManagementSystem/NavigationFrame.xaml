@@ -20,7 +20,7 @@
                 <NavigationViewItem Icon="List" Content="部门" />
                 <NavigationViewItem Icon="List" Content="部门变更" />
                 <NavigationViewItem Icon="ContactInfo" Content="用户" />
-                <NavigationViewItem Icon="Like" Content="奖励" />
+                <NavigationViewItem Icon="Like" Content="奖惩" />
                 <NavigationViewItem Icon="ContactPresence" Content="培训" />
             </NavigationView.MenuItems>
 

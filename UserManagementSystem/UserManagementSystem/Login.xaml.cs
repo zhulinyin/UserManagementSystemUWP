@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Windows.Data.Json;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -35,14 +36,23 @@ namespace UserManagementSystem
         {
             string username = Username_TextBox.Text;
             string password = Password_TextBox.Password;
-            string isSuccess = await LoginAsync("/signin", username, password);
-            if (isSuccess.Equals("true"))
-            {
-                Frame.Navigate(typeof(NavigationFrame));
-            }
-            else
+            string str = await LoginAsync("/signin", username, password);
+            if (str == "false")
             {
                 showDialog("用户名或者密码错误");
+                return;
+            }
+            JsonObject json = JsonObject.Parse(str);
+            string uright = json.GetNamedValue("uright").ToString().TrimStart('\"').TrimEnd('\"');
+            if (uright.Equals("1"))
+            {
+                App.manager = true;
+                Frame.Navigate(typeof(NavigationFrame));
+            }
+            else if (uright.Equals("2"))
+            {
+                App.manager = false;
+                Frame.Navigate(typeof(NavigationFrame));
             }
         }
 

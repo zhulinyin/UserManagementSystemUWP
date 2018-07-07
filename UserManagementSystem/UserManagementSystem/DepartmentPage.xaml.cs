@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class DepartmentPage : Page
     {
         private DepartmentViewModel ViewModel = DepartmentViewModel.getInstance();
+        private bool manager = App.manager;
         public DepartmentPage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Delete(object sender, RoutedEventArgs e)

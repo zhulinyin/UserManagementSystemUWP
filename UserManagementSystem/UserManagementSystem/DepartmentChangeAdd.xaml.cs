@@ -37,15 +37,18 @@ namespace UserManagementSystem
 
         }
 
-        private void Dept_SelectionChanged2(object sender, SelectionChangedEventArgs e)
+        private void Dept_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
-        }
-
-        private void Dept_SelectionChanged1(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
+            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();
+            if (way == "departure")
+            {
+                tDept.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                tDept.Visibility = Visibility.Visible;
+            }
+        }        
 
         private async void CreateButton_Clicked(object sender, RoutedEventArgs e)
         {
@@ -56,12 +59,8 @@ namespace UserManagementSystem
                 eid = "0";
             }
             else eid = em.Eid;
-            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();
-            if (way.Equals("take office"))
-            {
-                way = "1";
-            }
-            else if (way.Equals("departure"))
+            string way = ((ComboBoxItem)Way.SelectedItem).Content.ToString();            
+            if (way.Equals("departure"))
             {
                 way = "2";
             }
@@ -70,9 +69,14 @@ namespace UserManagementSystem
                 way = "3";
             }
             string time = Time.Date.Year + "-" + Time.Date.Month + "-" + Time.Date.Day;
-            string tdid=((Department)tDept.SelectedItem).Did;
+            Department department = (Department)tDept.SelectedItem;
+            string tdid = "0";
+            if (department != null)
+            {
+                tdid = department.Did;
+            }
             string fdname = em.Dname;
-            string fdid = null;
+            string fdid = "0";
             for(int i=0;i< ViewModel.Departments.Count; i++)
             {
                 if(fdname== ViewModel.Departments[i].Dname)

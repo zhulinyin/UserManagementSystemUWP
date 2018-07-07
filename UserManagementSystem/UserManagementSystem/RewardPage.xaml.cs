@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class RewardPage : Page
     {
         private RewardViewModel ViewModel = RewardViewModel.getInstance();
+        private bool manager = App.manager;
         public RewardPage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)

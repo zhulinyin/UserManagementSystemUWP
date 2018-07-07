@@ -26,6 +26,7 @@
             <ListView IsItemClickEnabled="False" ItemsSource="{x:Bind ViewModel.Users}"
                         xmlns:m="using:UserManagementSystem.Models" SelectionMode="None"
                           x:Name="listview">
+                <Image Opacity="0" x:Name="hiddenImage"></Image>
                 <ListView.ItemContainerStyle>
                     <Style TargetType="ListViewItem">
                         <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -43,10 +44,10 @@
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
                             <TextBlock Grid.Column="1" Text="{x:Bind Uright,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <AppBarButton Grid.Column="2" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked">
+                            <AppBarButton Grid.Column="2" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked"
+                                           Visibility="{Binding Visibility, ElementName=hiddenImage}">
                                 <AppBarButton.Flyout>
                                     <MenuFlyout>
-                                        <MenuFlyoutItem Text="删除" Click="Delete"/>
                                         <MenuFlyoutItem Text="更新" Click="Update"/>
                                     </MenuFlyout>
                                 </AppBarButton.Flyout>

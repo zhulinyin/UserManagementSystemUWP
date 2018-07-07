@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class TrainingPage : Page
     {
         private TrainingViewModel ViewModel = TrainingViewModel.getInstance();
+        private bool manager = App.manager;
         public TrainingPage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)

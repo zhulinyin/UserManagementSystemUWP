@@ -24,25 +24,20 @@ namespace UserManagementSystem
     public sealed partial class AttendancePage : Page
     {
         private AttendanceViewModel ViewModel = AttendanceViewModel.getInstance();
+        private bool manager = App.manager;
         public AttendancePage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AttendanceAdd));
-        }
-
-        private void Update(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Delete(object sender, RoutedEventArgs e)
-        {
-
-        }
+        }        
 
         private void Setting_Clicked(object sender, RoutedEventArgs e)
         {

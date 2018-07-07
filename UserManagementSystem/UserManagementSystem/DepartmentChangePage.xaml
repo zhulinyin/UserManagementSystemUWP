@@ -39,6 +39,7 @@
                 <ListView IsItemClickEnabled="False" ItemsSource="{x:Bind ViewModel.DepartmentChanges}"
                         xmlns:m="using:UserManagementSystem.Models" SelectionMode="None"
                           x:Name="listview">
+                    <Image Opacity="0" x:Name="hiddenImage"></Image>
                     <ListView.ItemContainerStyle>
                         <Style TargetType="ListViewItem">
                             <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -72,7 +73,8 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollViewer>
-            <CommandBar Grid.Row="1" VerticalAlignment="Bottom"  Background="{ThemeResource SystemControlAccentAcrylicElementAccentMediumHighBrush}">
+            <CommandBar Grid.Row="1" VerticalAlignment="Bottom"  Background="{ThemeResource SystemControlAccentAcrylicElementAccentMediumHighBrush}"
+                        Visibility="{Binding Visibility, ElementName=hiddenImage}">
                 <AppBarButton x:Name="AddAppBarButton" Icon="Add" Label="Add" Click="AddAppBarButton_Click" 
                           Style="{ThemeResource AppBarButtonRevealStyle}"/>
             </CommandBar>

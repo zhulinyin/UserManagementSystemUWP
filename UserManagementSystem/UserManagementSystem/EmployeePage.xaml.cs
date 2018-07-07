@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class EmployeePage : Page
     {
         private EmployeeViewModel ViewModel = EmployeeViewModel.getInstance();
+        private bool manager = App.manager;
         public EmployeePage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Setting_Clicked(object sender, RoutedEventArgs e)

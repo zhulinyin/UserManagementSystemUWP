@@ -24,9 +24,14 @@ namespace UserManagementSystem
     public sealed partial class UserPage : Page
     {
         private UserViewModel ViewModel = UserViewModel.getInstance();
+        private bool manager = App.manager;
         public UserPage()
         {
             this.InitializeComponent();
+            if (!manager)
+            {
+                hiddenImage.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Update(object sender, RoutedEventArgs e)
