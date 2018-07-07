@@ -61,5 +61,24 @@ namespace UserManagementSystem.ViewModels
                 Attendances.Add(new Attendance(aid, ename, awname, bdate, edate));
             }
         }
+
+        public async Task<bool> CreateItem(string eid, string away, string bdate, string edate)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"eid",eid },
+                {"away",away },
+                {"bdate",bdate },
+                {"edate",edate }
+            });
+            var response = await App.client.PostAsync("/newAttendance", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
+        }        
     }
 }

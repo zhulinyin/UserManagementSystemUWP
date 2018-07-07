@@ -58,5 +58,25 @@ namespace UserManagementSystem.ViewModels
                 DepartmentChanges.Add(new DepartmentChange(cid, ename, cwname, cdate, tname, fname));
             }
         }
+
+        public async Task<bool> CreateItem(string eid, string cway, string cdate, string tdid, string fdid)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"eid",eid },
+                {"cway",cway },
+                {"cdate",cdate },
+                {"tdid",tdid },
+                {"fdid",fdid }
+            });
+            var response = await App.client.PostAsync("/newEmployeeChange", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
+        }
     }
 }

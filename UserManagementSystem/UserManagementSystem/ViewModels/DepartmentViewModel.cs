@@ -55,5 +55,38 @@ namespace UserManagementSystem.ViewModels
                 Departments.Add(new Department(did, dname, ename));
             }
         }
+
+        public async Task<bool> CreateItem(string name)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"name",name }
+            });
+            var response = await App.client.PostAsync("/newDepartment", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
+        }
+
+        public async Task<bool> UpdateItem(string did, string name)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"did",did },
+                {"name",name }
+            });
+            var response = await App.client.PutAsync("/updateDepartment", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
+        }
     }
 }

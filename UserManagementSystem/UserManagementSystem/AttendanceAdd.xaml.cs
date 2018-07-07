@@ -20,9 +20,9 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class AttendanceUpdate : Page
+    public sealed partial class AttendanceAdd : Page
     {
-        public AttendanceUpdate()
+        public AttendanceAdd()
         {
             this.InitializeComponent();
         }

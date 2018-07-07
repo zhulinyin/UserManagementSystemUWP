@@ -44,7 +44,9 @@ namespace UserManagementSystem
             ContractViewModel contractViewModel = ContractViewModel.getInstance();
             DepartmentChangeViewModel departmentChangeViewModel = DepartmentChangeViewModel.getInstance();
             EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
-            DepartmentViewModel departmentViewModel = DepartmentViewModel.getInstance();            
+            DepartmentViewModel departmentViewModel = DepartmentViewModel.getInstance();
+            RewardViewModel rewardViewModel = RewardViewModel.getInstance();
+            TrainingViewModel trainingViewModel = TrainingViewModel.getInstance();
         }
 
         /// <summary>

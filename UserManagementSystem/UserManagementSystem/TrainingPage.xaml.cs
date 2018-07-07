@@ -21,20 +21,20 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class ContractPage : Page
+    public sealed partial class TrainingPage : Page
     {
-        private ContractViewModel ViewModel = ContractViewModel.getInstance();
-        public ContractPage()
+        private TrainingViewModel ViewModel = TrainingViewModel.getInstance();
+        public TrainingPage()
         {
             this.InitializeComponent();
         }
 
         private void AddAppBarButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(ContractAdd));
+            Frame.Navigate(typeof(AttendanceAdd));
         }
 
-        private void Setting_Clicked(object sender, RoutedEventArgs e)
+        private void Update(object sender, RoutedEventArgs e)
         {
 
         }
@@ -44,7 +44,7 @@ namespace UserManagementSystem
 
         }
 
-        private void Update(object sender, RoutedEventArgs e)
+        private void Setting_Clicked(object sender, RoutedEventArgs e)
         {
 
         }

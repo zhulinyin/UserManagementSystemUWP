@@ -94,7 +94,7 @@ namespace UserManagementSystem.ViewModels
                 {"hometown",hometown },
                 {"body",body }
             });
-            var response = await App.client.PutAsync("/newEmployee", content);
+            var response = await App.client.PutAsync("/updateEmployee", content);
             var resdata = await response.Content.ReadAsStringAsync();
             if (resdata.Equals("true"))
             {

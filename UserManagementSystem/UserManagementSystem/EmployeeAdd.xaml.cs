@@ -24,11 +24,11 @@ namespace UserManagementSystem
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class EmployeeUpdate : Page
+    public sealed partial class EmployeeAdd : Page
     {
         private DepartmentViewModel ViewModel;
         private EmployeeViewModel employeeViewModel = EmployeeViewModel.getInstance();
-        public EmployeeUpdate()
+        public EmployeeAdd()
         {
             this.InitializeComponent();
             ViewModel = DepartmentViewModel.getInstance();
