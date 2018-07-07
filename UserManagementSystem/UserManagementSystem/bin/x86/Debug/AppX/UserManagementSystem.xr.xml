@@ -140,6 +140,7 @@
     </RootType>
     <RootType FullName="UserManagementSystem.ContractAdd" />
     <RootType FullName="UserManagementSystem.ContractUpdate" />
+    <RootType FullName="UserManagementSystem.DepartmentChangeAdd" />
     <RootType FullName="UserManagementSystem.DepartmentChangePage" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />

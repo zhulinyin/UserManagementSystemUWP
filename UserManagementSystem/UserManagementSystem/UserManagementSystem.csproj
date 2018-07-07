@@ -110,6 +110,9 @@
     <Compile Include="ContractUpdate.xaml.cs">
       <DependentUpon>ContractUpdate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DepartmentChangeAdd.xaml.cs">
+      <DependentUpon>DepartmentChangeAdd.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DepartmentChangePage.xaml.cs">
       <DependentUpon>DepartmentChangePage.xaml</DependentUpon>
     </Compile>
@@ -218,6 +221,10 @@
     <Page Include="ContractUpdate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DepartmentChangeAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="DepartmentChangePage.xaml">
       <SubType>Designer</SubType>
