@@ -13,7 +13,7 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="合同信息" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></TextBlock>
+            <TextBlock Text="部门信息" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="25"></TextBlock>
             <Grid Grid.Row="1">
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>

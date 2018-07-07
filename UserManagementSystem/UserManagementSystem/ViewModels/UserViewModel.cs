@@ -44,6 +44,7 @@ namespace UserManagementSystem.ViewModels
 
         private async void ResolveJson()
         {
+            Users.Clear();
             string str = await GetUsersAsync();
             if (str == null) return;
             JsonArray jsonArray = JsonArray.Parse(str);
@@ -59,6 +60,23 @@ namespace UserManagementSystem.ViewModels
                 Users.Add(new User(username,uright));
             }
 
+        }
+
+        public async Task<bool> UpdateItem(string username, string password)
+        {
+            var content = new FormUrlEncodedContent(new Dictionary<string, string>()
+            {
+                {"username",username },
+                {"password",password }
+            });
+            var response = await App.client.PutAsync("/updateUser", content);
+            var resdata = await response.Content.ReadAsStringAsync();
+            if (resdata.Equals("true"))
+            {
+                ResolveJson();
+                return true;
+            }
+            else return false;
         }
     }
 }

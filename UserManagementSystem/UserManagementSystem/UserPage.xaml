@@ -37,11 +37,20 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                                 <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="80"/>
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="{x:Bind Username,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
                             <TextBlock Grid.Column="1" Text="{x:Bind Uright,Mode=TwoWay}" VerticalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
+                            <AppBarButton Grid.Column="2" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked">
+                                <AppBarButton.Flyout>
+                                    <MenuFlyout>
+                                        <MenuFlyoutItem Text="删除" Click="Delete"/>
+                                        <MenuFlyoutItem Text="更新" Click="Update"/>
+                                    </MenuFlyout>
+                                </AppBarButton.Flyout>
+                            </AppBarButton>
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
