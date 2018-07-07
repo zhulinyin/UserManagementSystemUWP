@@ -62,6 +62,12 @@ namespace UserManagementSystem
                     case "用户":
                         contentFrame.Navigate(typeof(UserPage));
                         break;
+                    case "奖励":
+                        contentFrame.Navigate(typeof(RewardPage));
+                        break;
+                    case "培训":
+                        contentFrame.Navigate(typeof(TrainingPage));
+                        break;
                     default:
                         contentFrame.Navigate(typeof(MainPage));
                         break;
