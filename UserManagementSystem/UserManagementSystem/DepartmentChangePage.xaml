@@ -16,8 +16,8 @@
             <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="100"/>
@@ -50,23 +50,23 @@
                             <Grid Height="70" VerticalAlignment="Top">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{x:Bind Cid,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="0" Text="{x:Bind Cid,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="2" Text="{x:Bind CWname,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="2" Text="{x:Bind CWname,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="3" Text="{x:Bind Cdate,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="3" Text="{x:Bind Cdate,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="4" Text="{x:Bind Tname,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="4" Text="{x:Bind Tname,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="5" Text="{x:Bind Fname,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="5" Text="{x:Bind Fname,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
                             </Grid>
                         </DataTemplate>

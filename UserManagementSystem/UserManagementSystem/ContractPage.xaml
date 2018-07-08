@@ -16,7 +16,7 @@
             <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="80"/>
-                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="120"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="150"/>
@@ -48,23 +48,23 @@
                             <Grid Height="70" VerticalAlignment="Top">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="80"/>
-                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="120"/>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{x:Bind Cid,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="0" Text="{x:Bind Cid,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="2" Text="{x:Bind Salary,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="2" Text="{x:Bind Salary,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="3" Text="{x:Bind Bdate,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="3" Text="{x:Bind Bdate,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="4" Text="{x:Bind Edate,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="4" Text="{x:Bind Edate,Mode=TwoWay}" VerticalAlignment="Center"   HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <AppBarButton Grid.Column="5" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked"
+                                <AppBarButton Grid.Column="5" Icon="Setting" IsCompact="True" VerticalAlignment="Center"  HorizontalAlignment="Center" Click="Setting_Clicked"
                                               Visibility="{Binding Visibility, ElementName=hiddenImage}">
                                     <AppBarButton.Flyout>
                                         <MenuFlyout>

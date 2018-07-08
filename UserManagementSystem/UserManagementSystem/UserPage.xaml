@@ -14,8 +14,9 @@
         </Grid.RowDefinitions>
         <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Column="0" Text="用户名" VerticalAlignment="Center" HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
@@ -36,15 +37,15 @@
                     <DataTemplate x:DataType="m:User">
                         <Grid Height="70" VerticalAlignment="Top">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="130"/>
+                                <ColumnDefinition Width="130"/>
                                 <ColumnDefinition Width="80"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock Grid.Column="0" Text="{x:Bind Username,Mode=TwoWay}" VerticalAlignment="Center" 
+                            <TextBlock Grid.Column="0" Text="{x:Bind Username,Mode=TwoWay}" VerticalAlignment="Center" HorizontalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <TextBlock Grid.Column="1" Text="{x:Bind Uright,Mode=TwoWay}" VerticalAlignment="Center" 
+                            <TextBlock Grid.Column="1" Text="{x:Bind Uright,Mode=TwoWay}" VerticalAlignment="Center" HorizontalAlignment="Center" 
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                            <AppBarButton Grid.Column="2" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked"
+                            <AppBarButton Grid.Column="2" Icon="Setting" IsCompact="True" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Setting_Clicked"
                                            Visibility="{Binding Visibility, ElementName=hiddenImage}">
                                 <AppBarButton.Flyout>
                                     <MenuFlyout>

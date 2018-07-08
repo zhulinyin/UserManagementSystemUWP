@@ -15,10 +15,10 @@
             </Grid.RowDefinitions>
             <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="110"/>
                     <ColumnDefinition Width="150"/>
-                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="150"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="80"/>
@@ -50,27 +50,27 @@
                         <DataTemplate x:DataType="m:Reward">
                             <Grid Height="70" VerticalAlignment="Top">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="80"/>
                                     <ColumnDefinition Width="110"/>
                                     <ColumnDefinition Width="150"/>
-                                    <ColumnDefinition Width="120"/>
+                                    <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="150"/>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{x:Bind Rid,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="0" Text="{x:Bind Rid,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="2" Text="{x:Bind Rreason,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="2" Text="{x:Bind Rreason,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="3" Text="{x:Bind Rway,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="3" Text="{x:Bind Rway,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="4" Text="{x:Bind Rdate,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="4" Text="{x:Bind Rdate,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="5" Text="{x:Bind Rmoney,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="5" Text="{x:Bind Rmoney,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <AppBarButton Grid.Column="6" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked"
+                                <AppBarButton Grid.Column="6" Icon="Setting" IsCompact="True" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Setting_Clicked"
                                               Visibility="{Binding Visibility, ElementName=hiddenImage}">
                                     <AppBarButton.Flyout>
                                         <MenuFlyout>

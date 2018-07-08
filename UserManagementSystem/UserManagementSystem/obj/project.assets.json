@@ -25569,18 +25569,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\asus\\.nuget\\packages\\": {},
+    "C:\\Users\\hp\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\study\\UserManagementSystemUWP\\UserManagementSystem\\UserManagementSystem\\UserManagementSystem.csproj",
+      "projectUniqueName": "D:\\学习考试选课\\大二下学习资料\\数据库系统\\实验作业\\UserUWP\\UserManagementSystem\\UserManagementSystem\\UserManagementSystem.csproj",
       "projectName": "UserManagementSystem",
-      "projectPath": "C:\\study\\UserManagementSystemUWP\\UserManagementSystem\\UserManagementSystem\\UserManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-      "outputPath": "C:\\study\\UserManagementSystemUWP\\UserManagementSystem\\UserManagementSystem\\obj\\",
+      "projectPath": "D:\\学习考试选课\\大二下学习资料\\数据库系统\\实验作业\\UserUWP\\UserManagementSystem\\UserManagementSystem\\UserManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "D:\\学习考试选课\\大二下学习资料\\数据库系统\\实验作业\\UserUWP\\UserManagementSystem\\UserManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -25588,7 +25588,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

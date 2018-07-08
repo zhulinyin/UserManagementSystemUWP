@@ -50,6 +50,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="IsCompact" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Flyout" />
       <RootEvent Name="Click" />
@@ -85,10 +86,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="UserManagementSystem.AttendancePage" />

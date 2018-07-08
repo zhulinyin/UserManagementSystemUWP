@@ -16,14 +16,14 @@
             </Grid.RowDefinitions>
             <Grid Height="70" VerticalAlignment="Top" Grid.Row="0" HorizontalAlignment="Center">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="130"/>
                     <ColumnDefinition Width="80"/>
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="100"/>
                     <ColumnDefinition Width="80"/>
                 </Grid.ColumnDefinitions>
 
@@ -56,35 +56,35 @@
                     </ListView.ItemContainerStyle>
                     <ListView.ItemTemplate>
                         <DataTemplate x:DataType="m:Employee">
-                            <Grid Height="70" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <Grid Height="70" VerticalAlignment="Center">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="60"/>
                                     <ColumnDefinition Width="80"/>
                                     <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="60"/>
-                                    <ColumnDefinition Width="60"/>
-                                    <ColumnDefinition Width="60"/>
                                     <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="130"/>
+                                    <ColumnDefinition Width="130"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="130"/>
                                     <ColumnDefinition Width="80"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBlock Grid.Column="0" Text="{x:Bind Eid,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="0" Text="{x:Bind Eid,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="1" Text="{x:Bind Ename,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="2" Text="{x:Bind Dname,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="2" Text="{x:Bind Dname,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="3" Text="{x:Bind Ebirth,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="3" Text="{x:Bind Ebirth,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="4" Text="{x:Bind Status,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="4" Text="{x:Bind Status,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="5" Text="{x:Bind Esex,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="5" Text="{x:Bind Esex,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="6" Text="{x:Bind Ehometown,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="6" Text="{x:Bind Ehometown,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <TextBlock Grid.Column="7" Text="{x:Bind Ebody,Mode=TwoWay}" VerticalAlignment="Center" 
+                                <TextBlock Grid.Column="7" Text="{x:Bind Ebody,Mode=TwoWay}" VerticalAlignment="Center"  HorizontalAlignment="Center"
                                         Foreground="Black" FontSize="20" Margin="10,0,10,0"/>
-                                <AppBarButton Grid.Column="8" Icon="Setting" IsCompact="True" VerticalAlignment="Center" Click="Setting_Clicked"
+                                <AppBarButton Grid.Column="8" Icon="Setting" IsCompact="True" VerticalAlignment="Center" HorizontalAlignment="Center" Click="Setting_Clicked"
                                               Visibility="{Binding Visibility, ElementName=hiddenImage}">
                                     <AppBarButton.Flyout>
                                         <MenuFlyout>
